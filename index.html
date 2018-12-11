@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <header>
+            <div>
+                <h1 class="Titulo">Weather</h1>
+            </div>
+            <div class="buscador">
+                <section class="webdesigntuts-workshop">
+                    <input v-model="City" id="Search" type="text" placeholder="Search...">
+                    <button @click=" getData() ">Search</button>
+                </section>
+            </div>
+        </header>
+        <div class="table">
+            <table id="table1" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Temperature (Fª)</th>
+                        <th>Temperature Maximum (Fª)</th>
+                        <th>Temperature Minimum (Fª)</th>
+                        <th>Humidity (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{data2.temp}}</td>
+                        <td>{{data2.temp_min}}</td>
+                        <td>{{data2.temp_max}}</td>
+                        <td>{{data2.humidity}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="table2" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Wind (m/s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{data3.speed}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <img id="Gif" src="">
+    </div>
+    <script src="main.js"></script>
+</body>
