@@ -3,6 +3,9 @@
 .webdesigntuts-workshop {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .webdesigntuts-workshop:before,
@@ -214,20 +217,22 @@
 
 
 #table1 {
-    width: 50%;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 30px;
 }
-#table1 thead{
-   background-color: chartreuse; 
-    
+
+#table1 thead {
+    background-color: chartreuse;
+
 }
 
 #table2 {
-    width: 10%;
+    width: 15%;
 }
-#table2 thead{
-   background-color: chartreuse; 
-    
+
+#table2 thead {
+    background-color: chartreuse;
+
 }
 
 .Titulo {
@@ -243,3 +248,15 @@
         3px 3px 0px green,
         6px 6px 0px black;
 }
+
+Body {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+#app {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#Gif {}
